@@ -52,3 +52,16 @@ for i in range(K):
     print(f"Iteração {i + 1}:")
     print(f"  Par fundido: {best}")
     print(f"  Estado do vocab: {vocab}\n")
+
+#  TAREFA 3: INTEGRAÇÃO INDUSTRIAL E WORDPIECE 
+
+# Instanciando o tokenizador do BERT 
+tokenizer = AutoTokenizer.from_pretrained("bert-base-multilingual-cased")
+
+# Frase de teste para particionamento morfológico 
+text = "Os hiper-parâmetros do transformer são inconstitucionalmente difíceis de ajustar."
+
+# Tokenização e impressão 
+tokens = tokenizer.tokenize(text)
+print(" Resultado da Tokenização WordPiece (BERT) ")
+print(tokens)
